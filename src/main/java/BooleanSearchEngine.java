@@ -67,7 +67,6 @@ public class BooleanSearchEngine implements SearchEngine {
 
     @Override
     public List<PageEntry> search(String word) {
-
         return wordMap.get(word.toLowerCase()).stream()
                 .sorted()
                 .collect(Collectors.toList());
